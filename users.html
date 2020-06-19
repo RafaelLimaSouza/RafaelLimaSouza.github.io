@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/styles/users.css">
+    <title>Cadastro de Usuários</title>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <form>
+
+            <header class="header">
+
+                <span><i class="fas fa-user-circle fa-2x"></i></span>
+                <h4 class="title">USUÁRIOS</h4>
+
+            </header>
+
+            <div class="form-inline row mt-3 mb-3 w-100">
+                <div class="form-group">
+                    <div class="col-1">
+                        <label>Usuário</label>
+                    </div>  
+                    <div class="col-3">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-inline row mb-3 w-100">
+                <div class="form-group">
+                    <div class="col-1">
+                        <label>Senha</label>
+                    </div>
+                    <div class="col-3">
+                        <input type="password" class="form-control" placeholder="********">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-inline row mb-3 w-100">
+                <div class="form-group">
+                    <div class="col-1">
+                        <label>Perfil</label>
+                    </div>
+                    <div class="col-3">
+                        <select class="form-control">
+                            <option>Selecione o Perfil</option>
+                            <option>Básico</option>
+                            <option>Moderado</option>
+                            <option>Administrador</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <button class="btn btn-outline-info ml-3" style="width: 150px;margin-right: 10px;">Incluir</button>
+                <button class="btn btn-outline-secondary" style="width: 150px;margin-left: 10px;">Redefinir Senha</button>
+            </div>
+
+            <table class="table mt-5">
+                <thead class="thead-light">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Usuário</th>
+                    <th scope="col">Perfil</th>
+                    <th scope="col">Última Alteração</th>
+                </tr>
+                </thead>    
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Básico</td>
+                    <td>15/01/2020</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Maria</td>
+                    <td>Moderador</td>
+                    <td>14/03/2020</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>Administrador</td>
+                    <td>20/05/1990</td>
+                </tr>
+                </tbody>
+            </table>
+
+        </form> 
+    
+     </div>
+    
+</body>
+</html>
