@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root {
+    --color-title: #686565;
+    --color-logo: #17a2b8;
+}
+
+/* Start - Reset config */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+a,li {
+    list-style: none;
+    color: inherit;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* End - Reset config */
+
+/* Start - Style Structures*/
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    min-width: 16%;
+    max-width: 230px;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: rgba(0,0,0,.7);
+    color: blanchedalmond;
+    padding: 0 15px;
+}
+
+#content-center {
+    flex: 1;
+    background-color: #f8f9fc;
+    min-height: 100vh;
+}
+
+/* End - Style Structures*/
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 24px;
+}
+
+.box-item {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: black;   
+    padding: 5px;
+}
+
+.icon {
+    width: 17px;
+}
+
+#logo-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 0;
+    border-left: 0; 
+}
+
+.logout {
+    display: flex;
+    margin-top: 30px;
+}
+
