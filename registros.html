@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css"></link>
+    <link rel="stylesheet" href="/styles/registros.css">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <header class="header">
+            
+            <span><i class="fas fa-notes-medical fa-2x"></i></span>
+            <h4>REGISTROS</h4>
+
+        </header>
+
+        <div class="form-group row w-100 mt-3 bg-light py-3">
+
+            <div class="col-3">
+                <label>CPF</label>
+                <div class="form-inline row">
+                    <input type="text" class="form-control mr-3" style="width: 125px;">
+                    <button class="btn btn-outline-info" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class="col-6">
+                <label>Paciente</label>
+                <select class="form-control">
+                    <option>Selecione o Paciente</option>
+                    <option>João</option>
+                    <option>Maria</option>
+                    <option>José</option>
+                </select>
+            </div>
+        </div>
+
+        <table class="table mt-5 text-center">
+            <thead class="thead-light">
+                <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Paciente</th>
+                <th scope="col">Data / Hora</th>
+                <th scope="col">Visualizar</th>
+                <th scope="col">Upload</th>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                <td>19</td>
+                <th scope="row">Maria</th>
+                <td>10/01/2020 10:00</td>
+                <td><i class="fas fa-eye"></i></td>
+                <td><i class="fas fa-cloud-upload-alt"></i></td>
+                </tr>
+                <tr>
+                <td>11</td>
+                <th scope="row">José</th>
+                <td>10/01/2020 10:00</td>
+                <td><i class="fas fa-eye"></i></td>
+                <td><i class="fas fa-cloud-upload-alt"></i></td>
+                </tr>
+                <tr>
+                <td>5</td>
+                <th scope="row">João</th>
+                <td>10/01/2020 10:00</td>
+                <td><i class="fas fa-eye"></i></td>
+                <td><i class="fas fa-cloud-upload-alt"></i></td>
+                </tr>
+            </tbody>
+            </table>
+
+    </div>
+
+    
+</body>
+</html>
