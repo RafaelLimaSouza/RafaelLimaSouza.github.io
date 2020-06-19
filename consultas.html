@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas</title>
+    <link rel="stylesheet" href="/bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/styles/consultas.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+  <body>
+
+    <div class="container-fluid">
+
+        <header class="header">
+
+            <span><i class="fas fa-clinic-medical fa-2x"></i></span>
+            <h4 class="title">CONSULTAS</h4>
+
+        </header>
+
+        <div class="row bg-light py-3 mt-3">
+
+            <div class="form-group row w-100">
+
+                <div class="col-2">
+                    <label>Data Inicial</label><input type="date" class="form-control">
+                </div>
+                <div class="col-2">
+                    <label>Data Final</label><input type="date" class="form-control">
+                </div>
+                <div class="col-4">
+                    <label>Paciente</label>
+                    <select class="form-control">
+                        <option>Selecione o Paciente</option>
+                        <option>João</option>
+                        <option>Maria</option>
+                        <option>José</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <label>Profissional</label>
+                    <select class="form-control">
+                        <option>Selecione o Paciente</option>
+                        <option>João</option>
+                        <option>Maria</option>
+                        <option>José</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+
+        <table class="table table-hover mt-3 text-center">
+           
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Paciente</th>
+                    <th scope="col">Not. Agenda</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Financeiro</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Registros</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td scope="row">1</td>
+                    <th>10/01/2020</th>
+                    <td>10:00</td>
+                    <td>Mark</td>
+                    <td>Sim</td>
+                    <td>Agendado</td>
+                    <td>OK</td>
+                    <td>150,00 <a href="" class="changePrice"><span><i class="far fa-edit ml-3"></i></span></a></td>
+                    <td>0</td>
+                    <td><a href="" class="text-success payment" data-toggle="tooltip" data-placement="top" title="Pagamento" ><span><i class="fas fa-money-check-alt mr-3"></i></span></a>
+                        <a href="" class="text-danger cancel" data-toggle="tooltip" data-placement="top" title="Cancelar"><span><i class="fas fa-ban mr-3"></i></span></a>
+                        <a href="atendimento.html" data-toggle="tooltip" data-placement="top" title="Iniciar Atendimento"><span><i class="fas fa-stethoscope"></i></span></a></td>
+                </tr>
+                <tr>
+                    <td scope="row">2</td>
+                    <th>10/01/2020</th>
+                    <td>14:00</td>
+                    <td>João</td>
+                    <td>Sim</td>
+                    <td>Cancelado</td>
+                    <td>OK</td>
+                    <td>150,00 <a href="" class="changePrice"><span><i class="far fa-edit ml-3"></i></span></a></td>
+                    <td>1</td>
+                    <td><a href="" class="text-success payment" data-toggle="tooltip" data-placement="top" title="Pagamento"><span><i class="fas fa-money-check-alt mr-3"></i></span></a>
+                        <a href="" class="text-danger cancel" data-toggle="tooltip" data-placement="top" title="Cancelar"><span><i class="fas fa-ban mr-3"></i></span></a>
+                        <a href="atendimento.html" data-toggle="tooltip" data-placement="top" title="Iniciar Atendimento"><span><i class="fas fa-stethoscope"></i></span></a></td>
+                </tr>
+                <tr>
+                    <td scope="row">3</td>
+                    <th>10/01/2020</th>
+                    <td>10:00</td>
+                    <td>José</td>
+                    <td>Sim</td>
+                    <td>Concluído</td>
+                    <td>OK</td>
+                    <td>150,00 <a href="" class="changePrice"><span><i class="far fa-edit ml-3"></i></span></a></td>
+                    <td>11</td>
+                    <td><a href="" class="text-success payment" data-toggle="tooltip" data-placement="top" title="Pagamento"><span><i class="fas fa-money-check-alt mr-3"></i></span></a>
+                        <a href="" class="text-danger cancel" data-toggle="tooltip" data-placement="top" title="Cancelar"><span><i class="fas fa-ban mr-3"></i></span></a>
+                        <a href="atendimento.html" data-toggle="tooltip" data-placement="top" title="Iniciar Atendimento"><span><i class="fas fa-stethoscope"></i></span></a></td>
+                </tr>
+            </tbody>
+        
+        </table>
+
+        <div class="modal" tabindex="-1" role="dialog" id="modalCancel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Deseja confirmar o cancelamento da consulta?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mt-2">
+                        <p class="text-body"><span class="label-modal">Paciente:</span> Mark</p>
+                        <p class="text-body"><span class="label-modal">Data:</span><span> 10/02/2020</p>
+                        <p class="text-body"><span class="label-modal">Profissional:</span><span> Dr. K</p>
+
+                        <div class="row d-flex justify-content-center">
+                         
+                            <button id="cancelConfirmed" class="btn btn-outline-success mr-3 btn-cancel"><i class="far fa-thumbs-up fa-2x"></i></button>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="modalCancelConfirmed">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-body">Cancelamento de Consulta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mt-2">
+                        <p class="text-success">Consulta Cancelada com sucesso!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="modalPayment">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-body">Escolha o método de pagamento</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mt-2">
+                        <p class="text-body"><span class="label-modal">Paciente:</span> Mark</p>
+                        <p class="text-body"><span class="label-modal">Valor:</span><span> R$ 150,00</p>
+                        <p class="text-body"><span class="label-modal">Data:</span><span> 10/02/2020</p>
+                        <p class="text-body"><span class="label-modal">Profissional:</span><span> Dr. K</p>
+
+                        <div class="row d-flex justify-content-center">
+                         
+                            <button id="btn-money"class="btn btn-outline-primary mr-3"><i class="far fa-money-bill-alt fa-2x mr-3"></i>Dinheiro</button>
+                            <button id="btn-card" class="btn btn-outline-primary"><i class="far fa-credit-card fa-2x mr-3"></i>Cartão de Crédito</button>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="modalPaymentConfirmed">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-body">Pagamento de Consulta</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mt-2">
+                        <p class="text-success">Pagamento confirmado com sucesso!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL DE MUDANÇA DE VALOR -->
+        <div class="modal" tabindex="-1" role="dialog" id="modalValor" >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Alteração de Valor</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="text-body">Valor Atual: R$ 150,00</p>
+                        <div id="rowPrice">
+                            <span class="mr-3">Novo Valor:</span>
+                            <input type="text" class="form-control" placeholder="R$ 00.00" style="width: 150px;"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-info" id="savePrice">Salvar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <script src="/scripts/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>

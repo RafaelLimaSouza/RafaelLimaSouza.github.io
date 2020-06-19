@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="/styles/cadastro.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <header class="header">
+            
+            <span><i class="fas fa-address-card fa-2x"></i></span>
+            <h4>CADASTRAR PACIENTES</h4>
+
+        </header>
+
+        <form>
+
+            <div class="form-group row mb-3">
+                <div class="col-3">
+                    <label class="mr-3">CPF</label>
+                    <div class="line-professional">
+                        <input type="text" class="form-control mr-3">
+                        <button class="btn btn-outline-info" type="submit"><i class="fas fa-search"></i></button> 
+                    </div>  
+                </div>
+                <div class="col-3">
+                    <label>Situação Financeira</label>
+                    <input type="text" class="form-control" value="OK" disabled>
+                </div>
+                <div class="col-3">
+                    <label>Data de Nascimento</label><input type="date" class="form-control">
+                </div>
+                <div class="col-3">
+                        <label>Sexo</label>
+                        <div class="form-inline">
+                            <input type="radio" name="masc" id=""><label for="masc" class="ml-2">Masculino</label>
+                            <input type="radio" name="fem" id="" class="ml-4"><label for="fem" class="ml-2">Feminino</label>
+                        </div>                
+                </div>
+
+            </div>
+
+            <div class="form-group row mb-3">
+                <div class="col-6">
+                    <label>Nome</label><input type="text" class="form-control">
+                </div>
+                <div class="col-3">
+                    <label>CEP</label><input type="text" class="form-control" placeholder="00000-000">
+                </div>
+                <div class="col-3">
+                    <label>Estado</label>
+                    <select class="form-control">
+                        <option>Selecione seu Estado</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                    </select>
+                </div>
+
+            </div>
+            
+            <div class="form-group row mb-3">
+
+                <div class="col-3">    
+                    <label>Cidade</label><input type="text" class="form-control">
+                </div>
+                <div class="col-6">
+                    <label>Endereço</label><input type="text" class="form-control">
+                </div>
+                <div class="col-3">
+                    <label>Número / Complemento</label><input type="text" class="form-control">
+                </div>
+            </div>
+
+             <div class="form-group row mb-3">
+                <div class="col-3">
+                    <label>Estado Civil</label>
+                    <select class="form-control">
+                        <option class="form-control">Estado Civil</option>
+                        <option class="form-control">Solteiro</option>
+                        <option class="form-control">Casado</option>
+                        <option class="form-control">Viúvo</option>
+                        <option class="form-control">Divorciado</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label>Profissão</label><input type="text" class="form-control">
+                </div>
+                <div class="col-3">
+                    <label>Contato 1</label><input type="text" class="form-control" placeholder="00-0000-0000">
+                </div>
+                <div class="col-3">
+                    <label>Contato 2</label><input type="text" class="form-control" placeholder="00-0000-0000">
+                </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <div class="col-6">
+                    <label>E-mail</label><input type="text" class="form-control" placeholder="exemplo@exemplo.com.br">
+                </div>
+
+            </div>
+
+            <div class="form-group row mb-3 w-100">
+                <div class="col-3">
+                    <label>Plano de Saúde</label>
+                    <select class="form-control">
+                        <option class="form-control">Selecione o plano</option>
+                        <option class="form-control">Unimed</option>
+                        <option class="form-control">Amil</option>
+                        <option class="form-control">Bradesco</option>
+                        <option class="form-control">Trasmonstano</option>
+                        <option class="form-control">Outros</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label>Atendimento</label>
+                    <div class="form-inline">
+                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                        <label class="form-check-label" for="disabledFieldsetCheck">
+                            Particular
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group row mb-3 w-100">
+                <div class="col-12 text-right">
+                <a href="" class="mr-3" data-toggle="tooltip" data-placement="top" title="Salvar"><span><i class="far fa-save fa-3x"></i></span></a>
+                        <a href="" class="mr-3" data-toggle="tooltip" data-placement="top" title="Limpar"><span><i class="fas fa-eraser fa-3x"></i></span></a>
+                        <a href="" data-toggle="tooltip" data-placement="top" title="Editar"><span><i class="far fa-edit fa-3x"></i></span></a>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="/scripts/index.js"></script>
+
+</body>
+
+</html>
