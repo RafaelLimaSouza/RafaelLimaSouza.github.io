@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/styles/agendamentoOnline.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container-back">
+
+        <div class="sidebar">
+
+            <div class="row-logo">
+                <img class="mb-3" src="/img/logo psystem7.png" alt="Logomarca" style="width: 75px;height: 75px">
+                Olá, Usuário!
+            </div>
+
+            <div class="box">
+
+                <div class="row-box">
+
+                    <div class="box-topo">
+
+                        <div class="box-header">
+                            <span class="box-items mr-4"><i class="fas fa-user-edit mr-2"></i>Dados Pessoais</span>
+                            <a href="cadastroOnline.html" class="ml-5 text-body"><i class="far fa-edit"></i></a>
+                        </div>
+                    
+                        <div class="row-box ">
+                            <div class="box-header">
+                                <span class="box-items"><i class="far fa-calendar-alt mr-2"></i>Consultas Agendadas</span>
+                            </div>
+                            <div class="row-box-dates bg-light">
+                                <span class="text-body">10/01/2020 - 10:00 <br> Dr. K</span><a href=""><span><i class="far fa-thumbs-up text-success"></i><br><i class="far fa-thumbs-down text-danger mt-2"></i></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="box-footer">
+                        <i class="fas fa-sign-out-alt mr-2"></i><a href="index.html">Sair</a>                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <main>
+
+            <header class="header">
+
+                <span><i class="fas fa-calendar-day fa-2x"></i></span>
+                <h4 class="title">AGENDAMENTO</h4>
+
+            </header>
+
+            <form>
+
+                <!--
+                <div class="form-inline row py-2 mt-3">
+                    <div class="form-group col-3">
+                        <label class="mr-3">CPF</label><input type="text" class="form-control mr-3" style="width: 125px;">
+                        <button class="btn btn-outline-info" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="form-group col-5 text-left">
+                        <label class="mr-3">Nome</label><input type="text" class="form-control" style="width:300px" disabled>
+                    </div>
+                    <div class="form-group col-4">
+                        <label class="mr-3">Data de Nascimento</label><input type="text" class="form-control" placeholder="01/01/2020"disabled>
+                    </div>
+                </div>
+                
+                <hr>
+                -->
+
+                <div class="form-group row mt-4">
+                    <div class="form-group mb-2 col-3">
+                        <label class="mr-3">Profissional</label>
+                        <select class="form-control">
+                            <option>Selecione o Profissional</option>
+                            <option>Joao</option>
+                            <option>Maria</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-2 col-3">
+                        <label class="mr-3">Abordagem</label>
+                        <select class="form-control">
+                            <option>Selecione a Abordagem</option>
+                            <option>Comportamental</option>
+                            <option>Sistêmica</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-2 col-6">
+                    </div>
+                </div>
+
+                <div class="agenda alert-info">
+                    <ul class="month">
+                        <li><a href="" class="text-info"><i class="fas fa-arrow-circle-left fa-2x"></i></a></li>
+                        <li>JANEIRO / 2020</li>
+                        <li><a href="" class="text-info"><i class="fas fa-arrow-circle-right fa-2x"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="card-group">
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">01 - Seg</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" id="function-save" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">02 - Ter</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">03 - Qua</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">04 - Qui</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">05 - Sex</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">06 - Sáb</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                            
+                        <div class="card-header">
+                            <h5 class="card-title">07 - Dom</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-group">
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">08 - Seg</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">09 - Ter</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">10 - Qua</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">11 - Qui</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">12 - Sex</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">13 - Sáb</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">14 - Dom</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                            <div class="row my-2">
+                                <a href="#" class="btn btn-outline-info mx-1">10:00</a>
+                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="alert alert-danger mt-3" role="alert">
+                    <h4 class="alert-heading" style="font-weight: bold;font-size: 14px;">Agendamento</h4>
+                    <hr>
+                    <p class="lead" style="font-weight: bold;font-size: 14px;margin-bottom:0;">ATENÇÃO: Solicitações de cancelamento serão aceitas sem justificativa 						
+                        se forem feitas 24 horas ou mais de antecedência em relação 						
+                        ao horário da consulta, sob pena de aplicação de multa de X %						
+                        do valor da consulta.						
+                        </p>
+                </div>
+
+            </form>
+
+            <!-- MODAL DE CONFIRMAÇÂO -->
+            <div class="modal" tabindex="-1" role="dialog" id="modalAgenda" >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Confirmação de Agendamento</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="lead">Deseja confirmar sua consulta?</p>
+                            <p class="lead">Data: 01/01/2020</p>
+                            <p class="lead">Valor: R$ 150,00</p>
+                            <p class="lead">Hora: 10:00</p>
+                            <p class="lead">Opções de Pagamento: Dinheiro/Cartão</p>
+                            <p class="lead">Data Limite do Pagamento: Dia da consulta</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-info" id="saveModal">Salvar</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="/scripts/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
