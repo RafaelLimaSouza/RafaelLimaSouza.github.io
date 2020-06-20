@@ -10,97 +10,90 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
 
         <header class="header">
-            
-            <div class="row w-100">
-
-                <div class="col">
-                </div>
-                <div class="col">
-                    <h4 class="title">Cadastro Online</h4>
-                </div>
-                <div class="col">
-                    <a href="index.html" class="float-right"><i class="fas fa-times" style="font-size:20px;"></i></a>
-                </div>
+            <div class="row w-100 justify-content-center">
+                <h4>Cadastro Online</h4>
             </div>
         </header>
 
-        <form>
+        <div class="main">
 
-            <div class="form-group row mb-2 mt-3">
-                <div class="col-6">
-                <label>CPF</label><input type="text" class="form-control">
-                </div>
-                <div class="col-6">
-                </div>
-            </div>
+            <form>
 
-            <div class="form-group row mb-2">
-                <div class="col-8">
-                    <label>Nome</label><input type="text" class="form-control">
+                <div class="form-group row mb-2 mt-3">
+                    <div class="col-6">
+                    <label>CPF</label><input type="text" class="form-control">
+                    </div>
+                    <div class="col-6">
+                    </div>
                 </div>
-                <div class="col-4">
-                    <label>Data de Nascimento</label><input type="date" class="form-control">
-                </div>
-            </div>
 
-            <div class="form-group row mb-2">
-                <div class="col-6">
-                    <label>Contato 1</label><input type="text" class="form-control" placeholder="00-0000-0000">
+                <div class="form-group row mb-2">
+                    <div class="col-8">
+                        <label>Nome</label><input type="text" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label>Data de Nascimento</label><input type="date" class="form-control">
+                    </div>
                 </div>
-                <div class="col-6">
-                    <label>Contato 2</label><input type="text" class="form-control" placeholder="00-0000-0000">
-                </div>
-            </div>
-
-            <div class="form-group row mb-2">
-                <div class="col-12">
-                    <label>E-mail</label><input type="email" class="form-control" placeholder="Digite seu e-mail">
-                </div>
-            </div>
-
-            <div class="form-group row mb-2">
-                <div class="col-6">
-                    <label>Plano de Saúde</label><input type="text" class="form-control">
-                </div>
-                <div class="col-6">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
-                <label class="form-check-label" for="disabledFieldsetCheck">
-                    Particular
-                </label>
-                </div>
-            </div>
-
-            <div class="jumbotron">
 
                 <div class="form-group row mb-2">
                     <div class="col-6">
-                        <label>Senha</label><input type="password" class="form-control" placeholder="********">
+                        <label>Contato 1</label><input type="text" class="form-control" placeholder="00-0000-0000">
                     </div>
                     <div class="col-6">
-                        <label>Confirmar Senha</label><input type="password" class="form-control" placeholder="********">
+                        <label>Contato 2</label><input type="text" class="form-control" placeholder="00-0000-0000">
                     </div>
                 </div>
 
-            </div>
-
-            <div class="form-group row mb-2 text-center">
-                <div class="col-6 text-right">
-                    <button class="btn btn-info" type="submit" id="cadastrar">Cadastrar</button>
+                <div class="form-group row mb-2">
+                    <div class="col-12">
+                        <label>E-mail</label><input type="email" class="form-control" placeholder="Digite seu e-mail">
+                    </div>
                 </div>
-                <div class="col-6 text-left">
-                    <button class="btn btn-secondary" type="reset">Limpar</button>
-                </div>
-            </div>
 
-        </form>
+                <div class="form-group row mb-2">
+                    <div class="col-6">
+                        <label>Plano de Saúde</label><input type="text" class="form-control">
+                    </div>
+                    <div class="col-6">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+                    <label class="form-check-label" for="disabledFieldsetCheck">
+                        Particular
+                    </label>
+                    </div>
+                </div>
+
+                <div class="jumbotron">
+
+                    <div class="form-group row mb-2">
+                        <div class="col-6">
+                            <label>Senha</label><input type="password" class="form-control" placeholder="********">
+                        </div>
+                        <div class="col-6">
+                            <label>Confirmar Senha</label><input type="password" class="form-control" placeholder="********">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group row mb-2 text-center">
+                    <div class="col-6 text-right">
+                        <button class="btn btn-info" type="submit" id="cadastrar">Cadastrar</button>
+                    </div>
+                    <a href="acessoExterno.html" class="btn bg-secondary text-white">Voltar</a>
+                </div>
+
+            </form>
+
+        </div>
 
         
         <div class="modal" tabindex="-1" role="dialog" id="modal3">
