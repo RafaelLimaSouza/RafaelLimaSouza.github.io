@@ -23,41 +23,39 @@
 
         <form>
         
-            <div class="form-inline row py-2 mt-3">
-                <div class="form-group col-3">
-                    <label class="mr-3">CPF</label><input type="text" class="form-control mr-3" style="width: 125px;">
-                    <button class="btn btn-outline-info" type="submit"><i class="fas fa-search"></i></button>
-                </div>
-                <div class="form-group col-5 text-left">
-                    <label class="mr-3">Nome</label><input type="text" class="form-control" style="width:300px" disabled>
+            <div class="row py-2 mt-3">
+                <div class="form-group col-2">
+                    <label class="mr-3">CPF</label>
+                    <div class="row p-0 m-0">
+                        <input type="text" class="form-control mr-1" style="width:100px;">
+                        <button class="btn btn-outline-info flex-1" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
                 </div>
                 <div class="form-group col-4">
-                    <label class="mr-3">Data de Nascimento</label><input type="text" class="form-control" placeholder="01/01/2020"disabled>
+                    <label>Nome</label><input type="text" class="form-control" style="width:300px" disabled>
                 </div>
-            </div>
-            
-            <hr>
-
-            <div class="form-group row">
-                <div class="form-group mb-2 col-3">
-                    <label class="mr-3">Profissional</label>
+                <div class="form-group col-2">
+                    <label>Data de Nascimento</label><input type="text" class="form-control" placeholder="01/01/2020"disabled>
+                </div>
+                 <div class="form-group col-2">
+                     <label>Profissional</label>
                     <select class="form-control">
                         <option>Selecione o Profissional</option>
                         <option>Joao</option>
                         <option>Maria</option>
                     </select>
                 </div>
-                <div class="form-group mb-2 col-3">
-                    <label class="mr-3">Abordagem</label>
+                 <div class="form-group col-2">
+                     <label>Abordagem</label>
                     <select class="form-control">
                         <option>Selecione a Abordagem</option>
                         <option>Infantil</option>
                         <option>Adulto</option>
                     </select>
                 </div>
-                <div class="form-group mb-2 col-6">
-                </div>
             </div>
+            
+            <hr class="mt-0">
 
             <div class="agenda alert-info">
                 <ul class="month">
