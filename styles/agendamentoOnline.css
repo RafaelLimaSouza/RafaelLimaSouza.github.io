@@ -32,7 +32,7 @@ body {
 
 .sidebar {
     width: 20%;
-    min-height: 100vh;
+    height: 100vh;
     background-color:#d1ecf1;
     padding: 15px;
 }
@@ -53,7 +53,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: honeydew;
+    background-color: white;
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
@@ -61,12 +61,16 @@ main {
 
 .box {
     background-color: white;
-    height: 475px;
+    height: calc(100% - 145px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .row-box {
     display: flex;
     flex-direction: column;
+    
 }
 
 .box-header {
@@ -92,21 +96,11 @@ main {
 }
 
 .box-footer {
-    margin-top: 250px;
     padding: 15px;
     font-size: 16px;
     font-weight: 600;
     color: black;
 }
-
-
-
-
-
-
-
-
-
 
 /* END SIDEBAR */
 
