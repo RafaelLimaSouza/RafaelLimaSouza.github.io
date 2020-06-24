@@ -30,12 +30,9 @@
                         <a href="cadastroOnline.html" class="ml-4 text-body"><i class="far fa-edit"></i></a>
                     </div>
                 
-                    <div class="row-box">
+                    <div class="row-box" id="insertBox">
                         <div class="box-header">
                             <span class="box-items"><i class="far fa-calendar-alt mr-2"></i>Consultas Agendadas</span>
-                        </div>
-                        <div class="row-box-dates bg-light">
-                            <span class="text-body">10/01/2020 - 10:00 <br> Dr. K</span><a href=""><span><i class="far fa-thumbs-up text-success"></i><br><i class="far fa-thumbs-down text-danger mt-2"></i></span></a>
                         </div>
                     </div>
 
@@ -65,10 +62,10 @@
                 <div class="form-group row mt-4">
                     <div class="form-group mb-2 col-3">
                         <label class="mr-3">Profissional</label>
-                        <select class="form-control">
-                            <option>Selecione o Profissional</option>
-                            <option>Joao</option>
-                            <option>Maria</option>
+                        <select class="form-control" id="professionalOnline">
+                            <option value="0">Selecione o Profissional</option>
+                            <option value="Joao">Joao</option>
+                            <option value="Maria">Maria</option>
                         </select>
                     </div>
                     <div class="form-group mb-2 col-3">
@@ -100,7 +97,7 @@
                         <div class="card-body">
                             <div class="row my-2">
                                 <a href="#" id="function-save" class="btn btn-outline-info mx-1">10:00</a>
-                                <a href="#" class="btn btn-outline-info mx-1">14:00</a>
+                                <a href="#" id="function-save2" class="btn btn-outline-info mx-1">14:00</a>
                             </div>
                             <div class="row my-2">
                                 <a href="#" class="btn btn-outline-info mx-1">10:00</a>
@@ -369,6 +366,7 @@
     </div>
 
     <script src="/scripts/index.js"></script>
+    <script src="/scripts/consultasOnline.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
