@@ -1,4 +1,3 @@
-
 //Ativa o modal de confirmação de Agendamento
 $(document).ready(function(){
     $("#function-save").click(function(){
@@ -94,4 +93,3 @@ $(document).ready(function() {
         $('[data-toggle="tooltip"]').tooltip()
       })
 });
-
