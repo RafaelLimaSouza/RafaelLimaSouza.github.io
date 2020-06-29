@@ -42,3 +42,12 @@ form {
 label {
     font-weight: 600;
 }
+
+.teste-img {
+    position: absolute;
+    top: 15px;
+}
+
+.title {
+    margin-left: 50px;
+}
