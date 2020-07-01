@@ -23,7 +23,7 @@
 
         <div class="row bg-light py-3 mt-3">
 
-            <div class="form-group row w-100">
+            <div class="form-group row w-100 mb-3">
 
                 <div class="col-2">
                     <label>Data Inicial</label><input type="date" class="form-control">
@@ -31,6 +31,12 @@
                 <div class="col-2">
                     <label>Data Final</label><input type="date" class="form-control">
                 </div>
+                  <div class="col-8 text-right">
+                     <a href="" data-toggle="tooltip" data-placement="top" title="Extrair em planilha"><span><i class="far fa-file-excel text-success fa-2x"></i></span></a>
+                </div>
+            </div>
+
+            <div class="form-group row w-100">
                 <div class="col-4">
                     <label>Paciente</label>
                     <select class="form-control">
@@ -49,8 +55,8 @@
                         <option>Dr. Y</option>
                     </select>
                 </div>
-                   <div class="col-2">
-                    <label>Status</label>
+                <div class="col-2">
+                    <label>Status da Consulta</label>
                     <select class="form-control">
                         <option>Selecione o Status</option>
                         <option>Agendado</option>
@@ -58,18 +64,22 @@
                         <option>Concluída</option>
                     </select>
                 </div>
+                 <div class="col-2">
+                    <label>Status Financeiro</label>
+                    <select class="form-control">
+                        <option>Selecione o Status</option>
+                        <option>OK</option>
+                        <option>A Receber</option>
+                        <option>Em Atraso</option>
+
+                    </select>
+                </div>
 
             </div>
 
         </div>
-        
-        <div class="form-group row w-100 text-right my-3">
-            <div class="col-12">
-                <a href="" data-toggle="tooltip" data-placement="top" title="Extrair em planilha"><span><i class="far fa-file-excel text-success fa-2x"></i></span></a>
-            </div>
-        </div>
 
-        <div class="table-responsive-sm">
+        <div class="table-responsive-sm mt-3">
             <table class="table">
             
                 <thead class="thead-light">

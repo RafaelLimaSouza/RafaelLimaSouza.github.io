@@ -27,8 +27,8 @@
                 <div class="col-1 p-0">
                     <label>Usuário</label>
                 </div>  
-                <div class="col-3">
-                    <input type="text" class="form-control">
+                <div class="col-2">
+                    <input type="text" class="form-control w-100">
                 </div>
             </div>
 
@@ -36,8 +36,8 @@
                 <div class="col-1 p-0">
                     <label>Senha</label>
                 </div>
-                <div class="col-3">
-                    <input type="password" class="form-control" placeholder="********">
+                <div class="col-2">
+                    <input type="password" class="form-control w-100" placeholder="********">
                 </div>
             </div>
 
@@ -45,22 +45,20 @@
                 <div class="col-1 p-0">
                     <label>Perfil</label>
                 </div>
-                <div class="col-3">
-                    <select class="form-control">
+                <div class="col-2">
+                    <select class="form-control w-100">
                         <option>Selecione o Perfil</option>
                         <option>Básico</option>
                         <option>Moderado</option>
                         <option>Administrador</option>
                     </select>
                 </div>
+                <div class="col-1">
+                    <a href="" data-toggle="tooltip" data-placement="top" title="Salvar"><span><i class="far fa-save fa-3x"></i></span></a>
+                </div>               
             </div>
 
-            <div class="row w-100 mb-3">
-                <button class="btn btn-outline-info mr-3" style="width:115px;">Incluir</button>
-                <button class="btn btn-outline-secondary">Redefinir Senha</button>
-            </div>
-
-            <table class="table mt-5">
+            <table class="table text-center mt-3">
                 <thead class="thead-light">
                 <tr>
                     <th scope="col">ID</th>
@@ -68,6 +66,7 @@
                     <th scope="col">Perfil</th>
                     <th scope="col">Última Alteração</th>
                     <th scope="col">Excluir</th>
+                    <th scope="col">Redefinir Senha</th>
                 </tr>
                 </thead>    
                 <tbody>
@@ -76,14 +75,16 @@
                     <td>Mark</td>
                     <td>Básico</td>
                     <td>15/01/2020</td>
-                    <td><a href="" data-toggle="tooltip" data-placement="top" title="Excluir Usuário"><span><i class="fas fa-trash-alt" style="color:red"></i></span></a></td>
+                    <td><a href="" data-toggle="tooltip" data-placement="top" title="Excluir Usuário"><span><i class="fas fa-trash-alt text-danger"></i></span></a></td>
+                    <td><a href="" data-toggle="tooltip" data-placement="top" title="Redefinir Senha"><span><i class="fas fa-key text-warning"></i></span></a></td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
                     <td>Maria</td>
                     <td>Moderador</td>
                     <td>14/03/2020</td>
-                    <td><a href="" data-toggle="tooltip" data-placement="top" title="Excluir Usuário"><span><i class="fas fa-trash-alt" style="color:red"></i></span></a></td>
+                    <td><a href="" data-toggle="tooltip" data-placement="top" title="Excluir Usuário"><span><i class="fas fa-trash-alt text-danger"></i></span></a></td>
+                    <td><a href="" data-toggle="tooltip" data-placement="top" title="Redefinir Senha"><span><i class="fas fa-key text-warning"></i></span></a></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
@@ -91,6 +92,7 @@
                     <td>Administrador</td>
                     <td>20/05/1990</td>
                     <td><a href="" data-toggle="tooltip" data-placement="top" title="Excluir Usuário"><span><i class="fas fa-trash-alt" style="color:red"></i></span></a></td>
+                    <td><a href="" data-toggle="tooltip" data-placement="top" title="Redefinir Senha"><span><i class="fas fa-key text-warning"></i></span></a></td>
                 </tr>
                 </tbody>
             </table>

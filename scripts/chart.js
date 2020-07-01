@@ -34,7 +34,7 @@ var myLineChart = new Chart(ctx2, {
                 label: 'Valor em R$',
                 data: [20345, 10789, 5346, 8756, 3546, 15432],
                 borderColor: '#17a2b8',
-                backgroundColor: 'transparent'
+                backgroundColor: '#17a2b823'
 
              }],
     },

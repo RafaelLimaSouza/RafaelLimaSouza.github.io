@@ -85,6 +85,27 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+    $(".btn-coment").click(function(e){
+        e.preventDefault();
+        $("#modalComentario").modal('toggle');  
+    });
+});
+
+$(document).ready(function(){
+    $(".info-abordagem").click(function(e){
+        e.preventDefault();
+        $("#modalAbordagem").modal('toggle');  
+    });
+});
+
+$(document).ready(function(){
+    $(".info-area").click(function(e){
+        e.preventDefault();
+        $("#modalArea").modal('toggle');  
+    });
+});
+
 
 //Adiciona os tooltips nos botões
 

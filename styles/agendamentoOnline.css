@@ -77,6 +77,8 @@ main {
     padding: 15px;
     background-color: #d4d1d1;
     border-bottom: .5px solid white;
+    display: flex;
+    justify-content: space-between;
 }
 .row-box a, span {
     font-size: 16px;
