@@ -1,7 +1,5 @@
 # PSystem
 
-![Screenshot](psystem.jpg)
-
 PSystem é uma proposta para gerenciamento de clínicas e consultórios particulares na área de psicologia com simplicidade e eficiência.
 
 O projeto é resultado de um desafio proposto na disciplina de Engenharia de Software no curso de Análise e Desenvolvimento de Sistemas na parceria ente a FATEC Rubens Lara e a Oracle.
